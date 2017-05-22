@@ -1,0 +1,30 @@
+If you are interested in something similar, we can tailor a project to predict telomere length (can explain what that is in our meeting)
+in patients/cell lines based on the paper:
+http://www.nature.com/ng/journal/v49/n3/full/ng.3781.html
+
+The students will take the project below. CCing also Martin who's an expert on telomeres.
+They will need from you:
+1. explanations on GO and building ontotype features
+2. how to download TCGA mutation data for the samples that were measured in the telomere paper below.
+
+There are a few validated options to get the Human annotated GO data:
+1. Use R package bioconductor, with the Homo Sapiens library. Installation and documentation can be found
+ https://bioconductor.org/packages/release/data/annotation/html/org.Hs.eg.db.html.
+2. Download from BioMart, go to 
+http://www.ensembl.org/biomart/martview/c0a697775e9f2037e04e146dbd22e554?VIRTUALSCHEMANAME=default&ATTRIBUTES=hsapiens_gene_ensembl.default.feature_page.ensembl_gene_id%7Chsapiens_gene_ensembl.default.feature_page.go_id%7Chsapiens_gene_ensembl.default.feature_page.name_1006&FILTERS=&VISIBLEPANEL=attributepanel 
+and click the "Results" button on the top. You can customize the data you want to retrieve - I marked the basic fields. 
+3. Download the raw Homo Sapiens data from here
+Documentation of the table is ftp://ftp.ebi.ac.uk/pub/databases/GO/goa/HUMAN/README. 
+
+Regarding the TCGA data, I've checked 2 different R packages - even if you don't want to write the project in R ,
+ I suggest downloading the data with one of the packages. These are the options:
+1. RTCGA package - download raw TCGA data. Great tutorial https://rtcga.github.io/RTCGA/.
+2. RTCGAToolbox package - download pre-processed TCGA data through project https://confluence.broadinstitute.org/display/GDAC/Rationale. 
+A bit lengthy tutorial https://www.bioconductor.org/packages/release/bioc/vignettes/RTCGAToolbox/inst/doc/RTCGAToolbox-vignette.html.
+
+I'm not sure which package will return the data in a manner more suiting your research, I would examine both.
+If you need help pinpointing the data from the paper, let me know.
+
+In response to a question regarding the implementation of the Ontotype - I wanted to clarify that it is fine to adapt the code
+ provided by the paper that can be found https://github.com/michaelkyu/ontotype.
+Any group that wants to implement it themselves are also very welcome to do so.
