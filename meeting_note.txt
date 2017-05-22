@@ -1,4 +1,0 @@
-which data we supposed to see from Homo Sapiens data, GO data
-how to work with R packages contain TCGA data(how to download)
-how to work with the github python file implementation of ontotype
-where can we see the data with the telomere length and in which way it connects with ontotype
