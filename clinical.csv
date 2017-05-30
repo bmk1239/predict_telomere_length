@@ -1,0 +1,172 @@
+,Composite Element REF,years_to_birth,vital_status,days_to_death,days_to_last_followup,primary_site_of_disease,neoplasm_diseasestage,pathology_T_stage,pathology_N_stage,pathology_M_stage,dcc_upload_date,gender,date_of_initial_pathologic_diagnosis,days_to_last_known_alive,radiation_therapy,histological_type,radiations_radiation_regimenindication,completeness_of_resection,number_of_lymph_nodes,race,ethnicity,batch_number
+tcga.af.2687,value,57,0,NA,734,rectum,stage iiic,t3,n2,m0,02-04-15,male,2009,595,NA,rectal adenocarcinoma,no,r0,6,white,not hispanic or latino,122.47.0
+tcga.af.2689,value,41,1,1201,546,rectum,stage iv,t3,n2,m1,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r0,6,white,not hispanic or latino,42.64.0
+tcga.af.2690,value,76,1,524,524,rectum,stage iiic,t3,n2,m0,02-04-15,female,2009,358,NA,rectal adenocarcinoma,yes,r0,3,white,not hispanic or latino,122.47.0
+tcga.af.2691,value,48,0,NA,1309,rectum,stage i,t1,n0,m0,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,42.64.0
+tcga.af.2692,value,54,0,NA,412,NA,stage iia,t3,n0,m0,02-04-15,female,2009,NA,NA,NA,yes,r0,0,white,not hispanic or latino,42.64.0
+tcga.af.2693,value,75,0,NA,581,NA,stage i,t2,n0,mx,02-04-15,male,2009,NA,NA,NA,yes,NA,0,white,not hispanic or latino,122.47.0
+tcga.af.3400,value,54,0,NA,387,rectum,stage iia,t3,n0,m0,02-04-15,male,2009,NA,NA,rectal mucinous adenocarcinoma,no,r0,0,white,not hispanic or latino,42.64.0
+tcga.af.3911,value,48,0,NA,1148,rectum,stage iiic,t3,n2,mx,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,no,NA,9,white,not hispanic or latino,122.47.0
+tcga.af.3913,value,60,1,316,NA,rectum,stage iv,t3,n1,m1,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,1,black or african american,not hispanic or latino,46.61.0
+tcga.af.3914,value,39,0,NA,1146,rectum,stage iiib,t3,n2a,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,no,r0,5,white,not hispanic or latino,46.61.0
+tcga.af.4110,value,77,0,NA,441,NA,stage iva,t4a,n2b,mx,02-04-15,male,2010,NA,NA,NA,yes,r0,21,white,not hispanic or latino,122.47.0
+tcga.af.5654,value,73,1,512,257,rectum,stage i,t2,n0,m0,02-04-15,female,2010,257,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,102.47.0
+tcga.af.6136,value,72,0,NA,468,rectum,stage iiib,t3,n1b,mx,02-04-15,female,2011,NA,NA,rectal adenocarcinoma,no,NA,2,white,not hispanic or latino,139.51.0
+tcga.af.6655,value,66,0,NA,609,rectum,stage iiia,t2,n1,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,2,white,not hispanic or latino,139.51.0
+tcga.af.6672,value,43,0,NA,316,rectum,stage iv,t4a,n2b,mx,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,no,NA,18,white,not hispanic or latino,139.51.0
+tcga.af.a56k,value,56,0,NA,2635,rectum,stage iia,t3,n0,m0,02-04-15,male,2006,NA,yes,rectal adenocarcinoma,yes,r0,0,black or african american,not hispanic or latino,411.21.0
+tcga.af.a56l,value,48,0,NA,2007,rectum,stage iiic,t3,n2,m0,02-04-15,female,2008,NA,yes,rectal adenocarcinoma,yes,rx,10,black or african american,NA,411.21.0
+tcga.af.a56n,value,47,0,NA,360,rectum,stage iia,t3,n0,m0,02-04-15,female,2012,NA,yes,rectal adenocarcinoma,yes,r0,0,black or african american,not hispanic or latino,411.21.0
+tcga.ag.3574,value,89,1,1096,0,rectum,stage ii,t3,n0,m0,02-04-15,female,2005,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3575,value,51,0,NA,365,rectum,stage ii,t3,n0,m0,02-04-15,male,2006,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3578,value,76,0,NA,974,rectum,stage iia,t3,n0,m0,02-04-15,female,2007,NA,NA,rectal mucinous adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3580,value,67,0,NA,244,rectum,stage i,t1,n0,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3581,value,63,0,NA,215,rectum,stage i,t2,n0,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3582,value,75,1,1096,31,rectum,stage iv,t3,n1,m1,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r2,1,NA,NA,42.64.0
+tcga.ag.3583,value,66,1,610,61,rectum,stage iv,t3,n2,m1,02-04-15,male,2008,NA,NA,rectal mucinous adenocarcinoma,yes,r2,9,NA,NA,42.64.0
+tcga.ag.3584,value,60,1,730,0,rectum,stage iv,t3,n2,m1,02-04-15,male,2008,NA,NA,rectal adenocarcinoma,yes,r2,20,NA,NA,42.64.0
+tcga.ag.3586,value,72,0,NA,31,rectum,stage iii,t3,n2,m0,02-04-15,female,2006,NA,NA,NA,yes,r0,4,NA,NA,42.64.0
+tcga.ag.3587,value,65,0,NA,1400,rectum,stage i,t2,n0,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3591,value,66,0,NA,0,rectum,stage iia,t3,n0,m0,02-04-15,female,2007,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,122.47.0
+tcga.ag.3592,value,68,0,NA,0,rectum,stage iia,t3,n0,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,122.47.0
+tcga.ag.3593,value,72,0,NA,1035,rectum,stage iia,t3,n0,m0,02-04-15,female,2007,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3594,value,77,1,61,0,rectum,stage iia,t3,n0,m0,02-04-15,male,2007,NA,NA,rectal mucinous adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3598,value,69,0,NA,1522,rectum,stage iia,t3,n0,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3599,value,70,0,NA,366,rectum,stage i,t2,n0,m0,02-04-15,male,2007,NA,NA,NA,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3600,value,62,0,NA,184,rectum,stage iiic,t3,n2,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,31,NA,NA,42.64.0
+tcga.ag.3601,value,68,0,NA,0,rectum,stage iiib,t4,n1,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r2,2,NA,NA,42.64.0
+tcga.ag.3602,value,66,0,NA,0,rectum,stage iiic,t3,n2,m0,02-04-15,female,2007,NA,NA,rectal adenocarcinoma,yes,r0,5,NA,NA,42.64.0
+tcga.ag.3605,value,85,0,NA,30,rectum,stage iv,t3,n1,m1,02-04-15,female,2008,NA,NA,rectal adenocarcinoma,yes,r2,3,NA,NA,42.64.0
+tcga.ag.3608,value,79,0,NA,485,rectum,stage iia,t3,n0,m0,02-04-15,female,2008,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3609,value,65,0,NA,608,rectum,stage iiic,t3,n2,m0,02-04-15,female,2008,NA,NA,rectal adenocarcinoma,yes,r0,4,NA,NA,42.64.0
+tcga.ag.3611,value,72,0,NA,0,rectum,stage iia,t3,n0,m0,02-04-15,male,2009,31,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3612,value,55,0,NA,608,rectum,stage iiib,t3,n1,m0,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r0,1,NA,NA,42.64.0
+tcga.ag.3725,value,90,0,NA,0,rectum,stage iii,t3,n2,m0,02-04-15,female,2005,NA,NA,rectal adenocarcinoma,yes,r0,5,NA,NA,122.47.0
+tcga.ag.3726,value,63,0,NA,243,rectum,stage i,t2,n0,m0,02-04-15,female,2006,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3727,value,78,0,NA,30,rectum,stage iii,t3,n1,m0,02-04-15,female,2006,NA,NA,rectal adenocarcinoma,yes,r0,2,NA,NA,42.64.0
+tcga.ag.3728,value,73,0,NA,912,rectum,stage iiib,t3,n1,m0,02-04-15,male,2006,NA,NA,rectal adenocarcinoma,yes,r0,3,NA,NA,42.64.0
+tcga.ag.3731,value,65,0,NA,31,rectum,stage iv,t3,n1,m1,02-04-15,male,2004,NA,NA,rectal adenocarcinoma,yes,r2,3,NA,NA,122.47.0
+tcga.ag.3732,value,78,0,NA,1003,rectum,stage i,t2,n0,m0,02-04-15,female,2005,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,102.47.0
+tcga.ag.3742,value,85,0,NA,30,rectum,stage i,t1,n0,m0,02-04-15,female,2004,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,102.47.0
+tcga.ag.3878,value,64,0,NA,30,rectum,stage i,t2,n0,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3881,value,83,0,NA,0,rectum,stage iia,t3,n0,m0,02-04-15,female,2008,NA,NA,NA,yes,NA,0,NA,NA,42.64.0
+tcga.ag.3882,value,66,0,NA,608,rectum,stage i,t2,n0,m0,02-04-15,female,2008,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3883,value,69,0,NA,31,rectum,stage i,t2,n0,m0,02-04-15,male,2008,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,42.64.0
+tcga.ag.3885,value,71,0,NA,0,rectum,stage iiib,t3,n1,m0,02-04-15,female,2008,NA,NA,rectal adenocarcinoma,yes,r0,3,NA,NA,42.64.0
+tcga.ag.3887,value,68,0,NA,1124,rectum,stage iia,t3,n0,m0,02-04-15,male,2009,NA,NA,rectal mucinous adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.3890,value,62,0,NA,518,rectum,stage i,t2,n0,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.3891,value,66,0,NA,548,rectum,stage i,t2,n0,m0,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.3892,value,57,0,NA,396,rectum,stage i,t1,n0,m0,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.3893,value,74,0,NA,1065,rectum,stage iiib,t3,n1,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,1,NA,NA,46.61.0
+tcga.ag.3894,value,65,0,NA,426,rectum,stage iia,t3,n0,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.3896,value,85,0,NA,31,rectum,stage i,t2,n0,m0,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.3898,value,61,0,NA,1461,rectum,stage iia,t3,n0,m0,02-04-15,male,2006,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.3901,value,67,0,NA,0,rectum,stage iiib,t3,n1,m0,02-04-15,female,2007,NA,NA,rectal mucinous adenocarcinoma,yes,r0,2,NA,NA,46.61.0
+tcga.ag.3902,value,61,0,NA,974,rectum,stage iia,t3,n0,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.3906,value,67,0,NA,608,rectum,stage i,t2,n0,m0,02-04-15,female,2008,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.3909,value,69,0,NA,608,rectum,stage iiib,t3,n1,m0,02-04-15,female,2008,NA,NA,rectal adenocarcinoma,yes,r0,3,NA,NA,46.61.0
+tcga.ag.3999,value,61,0,NA,853,rectum,stage iiic,t3,n2,m0,02-04-15,female,2008,NA,NA,rectal adenocarcinoma,yes,r0,20,NA,NA,46.61.0
+tcga.ag.4001,value,74,0,NA,1096,rectum,stage iia,t3,n0,m0,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.4005,value,64,0,NA,427,rectum,stage iv,t3,n2,m1,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,7,NA,NA,46.61.0
+tcga.ag.4007,value,86,0,NA,31,rectum,stage iv,t4,n2,m1,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r2,5,NA,NA,46.61.0
+tcga.ag.4008,value,63,0,NA,518,rectum,stage iia,t3,n0,m0,02-04-15,male,2008,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.4009,value,83,0,NA,426,rectum,stage i,t2,n0,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.4015,value,85,0,NA,0,rectum,stage iia,t3,n0,m0,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,46.61.0
+tcga.ag.4021,value,84,0,NA,0,rectum,stage iv,t3,n2,m1,02-04-15,female,2005,NA,NA,rectal adenocarcinoma,yes,r2,5,NA,NA,122.47.0
+tcga.ag.4022,value,59,0,NA,30,rectum,stage ii,t3,n0,m0,02-04-15,female,2006,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,122.47.0
+tcga.ag.a002,value,35,0,NA,638,rectum,stage i,t2,n0,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,43.54.0
+tcga.ag.a008,value,50,0,NA,424,rectum,stage i,t2,n0,m0,02-04-15,female,2009,NA,NA,rectal mucinous adenocarcinoma,yes,r0,0,NA,NA,43.54.0
+tcga.ag.a00c,value,49,0,NA,183,rectum,stage iiib,t3,n1,m0,02-04-15,female,2007,NA,NA,rectal adenocarcinoma,yes,r0,1,NA,NA,43.54.0
+tcga.ag.a00h,value,75,0,NA,790,rectum,stage iia,t3,n0,m0,02-04-15,male,2008,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,43.54.0
+tcga.ag.a00y,value,68,0,NA,700,rectum,stage iia,t3,n0,m0,02-04-15,male,2008,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,43.54.0
+tcga.ag.a011,value,80,0,NA,1126,rectum,stage iia,t3,n0,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,43.54.0
+tcga.ag.a014,value,86,0,NA,485,rectum,stage i,t2,n0,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,43.54.0
+tcga.ag.a015,value,64,0,NA,1096,rectum,stage i,t1,n0,m0,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,43.54.0
+tcga.ag.a016,value,55,0,NA,276,rectum,stage iv,t3,n2,m1,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r2,4,NA,NA,43.54.0
+tcga.ag.a01j,value,59,0,NA,31,rectum,stage iia,t3,n0,m0,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,43.54.0
+tcga.ag.a01l,value,58,0,NA,365,rectum,stage iiib,t3,n1,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,2,NA,NA,43.54.0
+tcga.ag.a01n,value,68,0,NA,943,rectum,stage iv,t2,n0,m1,02-04-15,female,2009,NA,NA,rectal adenocarcinoma,yes,r2,0,NA,NA,43.54.0
+tcga.ag.a01w,value,67,0,NA,2130,rectum,stage ii,t3,n0,m0,02-04-15,female,2004,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,67.58.0
+tcga.ag.a01y,value,49,0,NA,1947,rectum,stage ii,t3,n0,m0,02-04-15,female,2004,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,67.58.0
+tcga.ag.a020,value,57,0,NA,334,rectum,stage iii,t3,n1,m0,02-04-15,female,2005,NA,NA,rectal mucinous adenocarcinoma,yes,r0,1,NA,NA,67.58.0
+tcga.ag.a023,value,62,1,1581,NA,rectum,stage iv,t4,n2,m1,02-04-15,female,2005,NA,NA,rectal adenocarcinoma,yes,r2,6,NA,NA,43.54.0
+tcga.ag.a025,value,62,0,NA,1520,rectum,stage i,t1,n0,m0,02-04-15,female,2006,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,43.54.0
+tcga.ag.a026,value,66,1,59,NA,rectum,stage ii,t4,n0,m0,02-04-15,male,2006,NA,NA,rectal adenocarcinoma,yes,r1,0,NA,NA,67.58.0
+tcga.ag.a02g,value,66,1,1185,NA,rectum,stage iv,t2,n1,m1,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r2,3,NA,NA,43.54.0
+tcga.ag.a02n,value,67,0,NA,1885,rectum,stage ii,t3,n0,m0,02-04-15,male,2005,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,67.58.0
+tcga.ag.a02x,value,77,0,NA,1247,rectum,stage i,t2,n0,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,0,NA,NA,43.54.0
+tcga.ag.a032,value,68,0,NA,1157,rectum,stage iiib,t3,n1,m0,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r0,2,NA,NA,43.54.0
+tcga.ag.a036,value,71,0,NA,3562,rectum,stage iii,t3,n2,m0,02-04-15,male,2002,NA,NA,rectal adenocarcinoma,yes,r0,18,NA,NA,67.58.0
+tcga.ah.6544,value,60,0,NA,15,rectum,NA,t3,n1,m1,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,NA,3,white,NA,139.51.0
+tcga.ah.6547,value,79,0,NA,44,rectum,NA,t3,n0,mx,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,NA,0,white,NA,139.51.0
+tcga.ah.6549,value,66,0,NA,532,rectum,NA,t3,nx,mx,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,rx,NA,white,NA,139.51.0
+tcga.ah.6643,value,50,0,NA,21,rectum,stage iiic,t3,n2b,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,8,white,NA,139.51.0
+tcga.ah.6644,value,73,0,NA,22,rectum,NA,t3,nx,mx,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,NA,0,white,NA,139.51.0
+tcga.ah.6897,value,48,0,NA,804,rectum,stage i,t2,n0,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,158.47.0
+tcga.ah.6903,value,46,0,NA,55,rectum,stage iiib,t3,n1b,m0,02-04-15,male,2010,NA,NA,rectal mucinous adenocarcinoma,yes,r0,3,white,not hispanic or latino,158.47.0
+tcga.bm.6198,value,73,0,NA,310,rectum,stage iiib,t3,n1,NA,02-04-15,male,2010,310,NA,rectal adenocarcinoma,no,r0,0,white,not hispanic or latino,122.47.0
+tcga.ci.6619,value,41,0,NA,184,rectum,stage iv,t3,n1c,m1,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,NA,NA,white,not hispanic or latino,139.51.0
+tcga.ci.6620,value,41,0,NA,184,rectum,stage iva,t3,n1,m1,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,NA,NA,white,not hispanic or latino,139.51.0
+tcga.ci.6621,value,63,0,NA,0,rectum,stage iii,t3,n1,mx,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,NA,NA,white,not hispanic or latino,139.51.0
+tcga.ci.6622,value,74,0,NA,212,rectum,stage iib,t4,n0,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,NA,0,white,not hispanic or latino,139.51.0
+tcga.ci.6623,value,44,0,NA,285,rectum,stage i,t1,n0,m0,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,yes,NA,NA,white,not hispanic or latino,139.51.0
+tcga.ci.6624,value,53,0,NA,144,rectum,stage i,t2,n0,m0,02-04-15,female,2011,NA,NA,rectal adenocarcinoma,yes,NA,NA,white,not hispanic or latino,139.51.0
+tcga.cl.4957,value,79,0,NA,425,rectum,stage iiia,t3,n1,m0,02-04-15,female,2008,425,NA,rectal adenocarcinoma,yes,NA,2,NA,hispanic or latino,122.47.0
+tcga.cl.5917,value,71,0,NA,2376,rectum,stage iiic,t3,n2,mx,02-04-15,female,2006,NA,NA,rectal adenocarcinoma,yes,rx,NA,white,not hispanic or latino,102.47.0
+tcga.cl.5918,value,90,0,NA,218,rectum,stage iia,t3,n0,mx,02-04-15,female,2008,NA,NA,rectal adenocarcinoma,yes,rx,NA,white,not hispanic or latino,102.47.0
+tcga.dc.4745,value,49,0,NA,334,rectum,stage iiib,t3,n1a,m0,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,r0,1,white,not hispanic or latino,122.47.0
+tcga.dc.4749,value,57,0,NA,335,rectum,stage i,t2,n0,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,122.47.0
+tcga.dc.5337,value,69,0,NA,457,rectum,stage i,t1,n0,m0,02-04-15,male,2010,304,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,102.47.0
+tcga.dc.5869,value,62,0,NA,395,rectum,stage iiib,t3,n1a,m0,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,r0,1,black or african american,not hispanic or latino,102.47.0
+tcga.dc.6154,value,57,0,NA,365,rectum,stage iva,t4a,n2b,m1,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,r0,8,white,not hispanic or latino,158.47.0
+tcga.dc.6155,value,31,0,NA,425,rectum,stage iiia,t2,n1b,m0,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,r0,3,white,not hispanic or latino,102.47.0
+tcga.dc.6156,value,62,0,NA,457,rectum,stage iva,t4a,n2b,m1a,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,7,white,not hispanic or latino,102.47.0
+tcga.dc.6157,value,48,0,NA,1095,rectum,stage i,t2,n0,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,black or african american,not hispanic or latino,102.47.0
+tcga.dc.6158,value,70,1,334,216,rectum,stage i,t2,n0,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,102.47.0
+tcga.dc.6160,value,68,0,NA,914,rectum,stage i,t2,n0,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,102.47.0
+tcga.dc.6681,value,70,0,NA,394,rectum,stage iva,t3,n2a,m1a,02-04-15,female,2011,NA,NA,rectal adenocarcinoma,yes,r0,7,white,not hispanic or latino,139.51.0
+tcga.dc.6682,value,57,0,NA,397,rectum,stage iia,t3,n0,m0,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,139.51.0
+tcga.dc.6683,value,43,0,NA,306,rectum,stage iiib,t3,n1b,m0,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,yes,r0,3,white,not hispanic or latino,139.51.0
+tcga.dt.5265,value,51,0,NA,161,rectum,stage ii,t3,n0,m0,19-03-15,male,2010,NA,NA,rectal mucinous adenocarcinoma,yes,rx,NA,asian,not hispanic or latino,139.50.0
+tcga.dy.a0xa,value,57,0,NA,3846,rectum,stage iia,t3,n0,m0,02-04-15,female,2001,3635,NA,rectal adenocarcinoma,yes,NA,0,white,not hispanic or latino,133.51.0
+tcga.dy.a1dc,value,72,1,1258,1258,rectum,stage iia,t3,n0,m0,02-04-15,female,2000,1258,NA,rectal adenocarcinoma,yes,NA,0,white,not hispanic or latino,133.51.0
+tcga.dy.a1dd,value,77,1,1741,1741,rectum,stage iiib,t3,n1,m0,02-04-15,female,1999,1741,NA,rectal adenocarcinoma,yes,NA,1,white,not hispanic or latino,133.51.0
+tcga.dy.a1de,value,56,0,NA,3932,rectum,stage iia,t3,n0,m0,02-04-15,female,2001,3667,NA,rectal adenocarcinoma,yes,NA,0,white,not hispanic or latino,133.51.0
+tcga.dy.a1df,value,73,1,734,734,rectum,stage iiic,t3,n2,m0,02-04-15,female,2001,734,NA,rectal adenocarcinoma,yes,NA,5,white,not hispanic or latino,133.51.0
+tcga.dy.a1dg,value,75,1,1566,1566,rectum,stage iva,t3,n1,m1,02-04-15,male,2000,1566,NA,rectal adenocarcinoma,yes,NA,2,white,not hispanic or latino,133.51.0
+tcga.dy.a1h8,value,77,1,992,992,rectum,stage iiia,t2,n1,m0,02-04-15,female,2000,992,NA,rectal adenocarcinoma,yes,NA,1,white,not hispanic or latino,133.51.0
+tcga.ef.5830,value,54,0,NA,15,rectum,stage iib,t4a,n0,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,NA,white,not hispanic or latino,102.47.0
+tcga.ef.5831,value,72,0,NA,73,rectum,stage iia,t3,n0,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,NA,white,not hispanic or latino,102.47.0
+tcga.ei.6506,value,78,0,NA,625,rectum,stage iia,t3,n0,m0,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,122.47.0
+tcga.ei.6507,value,60,0,NA,607,rectum,stage iia,t3,n0,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,122.47.0
+tcga.ei.6508,value,48,0,NA,636,rectum,stage iiib,t3,n1a,m0,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,r0,1,white,not hispanic or latino,122.47.0
+tcga.ei.6509,value,53,0,NA,517,rectum,stage iiic,t3,n2b,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,7,white,not hispanic or latino,122.47.0
+tcga.ei.6510,value,77,0,NA,556,rectum,stage iva,t2,n0,mx,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,122.47.0
+tcga.ei.6511,value,52,0,NA,482,rectum,stage iiib,t3,n1,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,4,white,not hispanic or latino,122.47.0
+tcga.ei.6512,value,64,0,NA,538,rectum,stage iiib,t3,n1,m0,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,r0,1,white,not hispanic or latino,122.47.0
+tcga.ei.6513,value,59,0,NA,497,rectum,stage iiib,t3,n1,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,2,white,not hispanic or latino,122.47.0
+tcga.ei.6514,value,59,0,NA,496,rectum,stage iia,t3,n0,m0,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,122.47.0
+tcga.ei.6881,value,60,0,NA,499,rectum,stage iiia,t3,n1,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,1,white,not hispanic or latino,158.47.0
+tcga.ei.6882,value,59,0,NA,262,rectum,stage iia,t3,n0,m0,02-04-15,male,2011,NA,NA,rectal mucinous adenocarcinoma,yes,r0,0,white,not hispanic or latino,158.47.0
+tcga.ei.6883,value,63,0,NA,350,rectum,stage iic,t3,n0,m0,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,158.47.0
+tcga.ei.6884,value,71,0,NA,328,rectum,stage iiia,t3,n1,m0,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,yes,r0,3,white,not hispanic or latino,158.47.0
+tcga.ei.6885,value,57,0,NA,415,rectum,stage iv,t3,n1b,m1,02-04-15,female,2011,NA,NA,rectal adenocarcinoma,yes,r0,2,white,not hispanic or latino,158.47.0
+tcga.ei.6917,value,33,0,NA,531,rectum,stage iiia,t3,n1,m0,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,3,white,not hispanic or latino,158.47.0
+tcga.ei.7002,value,58,0,NA,364,rectum,stage iv,t3,n2,m1,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,yes,r0,7,white,not hispanic or latino,158.47.0
+tcga.ei.7004,value,37,0,NA,257,rectum,stage iva,t4a,n2b,m0,02-04-15,female,2011,NA,NA,rectal mucinous adenocarcinoma,yes,r0,30,white,not hispanic or latino,158.47.0
+tcga.f5.6464,value,77,1,303,0,rectum,stage iiic,t4b,n2a,m0,02-04-15,female,2011,NA,NA,rectal adenocarcinoma,yes,r0,4,white,not hispanic or latino,122.47.0
+tcga.f5.6465,value,64,0,NA,1141,rectum,stage iia,t3,n0,m0,02-04-15,female,2010,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,122.47.0
+tcga.f5.6571,value,62,0,NA,952,rectum,stage iia,t3,n0,m0,25-09-14,female,2011,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,139.38.0
+tcga.f5.6702,value,71,1,869,452,rectum,stage iva,t3,n1,m1,02-04-15,male,2010,NA,NA,rectal adenocarcinoma,yes,r0,1,white,not hispanic or latino,139.51.0
+tcga.f5.6810,value,71,0,NA,12,rectum,stage iia,t3,n0,m0,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,139.51.0
+tcga.f5.6811,value,72,0,NA,979,rectum,stage iia,t3,n0,m0,02-04-15,female,2011,NA,NA,rectal adenocarcinoma,yes,NA,0,white,not hispanic or latino,139.51.0
+tcga.f5.6812,value,67,0,NA,20,rectum,stage iia,t3,n0,m0,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,139.51.0
+tcga.f5.6813,value,70,0,NA,21,rectum,stage iiic,t4a,n2,m0,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,yes,r0,12,white,not hispanic or latino,139.51.0
+tcga.f5.6814,value,57,0,NA,16,rectum,stage iia,t2,n0,m0,02-04-15,male,2011,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,158.47.0
+tcga.f5.6861,value,60,0,NA,34,rectum,stage iiia,t3,n0,m0,02-04-15,female,2011,NA,NA,rectal adenocarcinoma,yes,r0,0,white,not hispanic or latino,158.47.0
+tcga.f5.6863,value,71,0,NA,23,rectum,stage iiib,t4a,n1,m0,02-04-15,female,2011,NA,NA,rectal adenocarcinoma,yes,r0,3,white,not hispanic or latino,158.47.0
+tcga.f5.6864,value,74,0,NA,14,rectum,stage iiic,t3,n2,m0,02-04-15,female,2011,NA,NA,rectal adenocarcinoma,yes,r0,4,white,not hispanic or latino,158.47.0
+tcga.g5.6233,value,74,1,556,NA,rectum,stage iic,t3,n2,m0,02-04-15,male,2009,NA,NA,rectal adenocarcinoma,yes,r0,27,white,not hispanic or latino,122.47.0
+tcga.g5.6235,value,72,0,NA,1696,rectum,stage iiib,t3,n1,mx,02-04-15,male,2007,NA,NA,rectal adenocarcinoma,yes,r1,1,white,not hispanic or latino,122.47.0
+tcga.g5.6572,value,56,1,1432,NA,rectum,NA,NA,NA,NA,02-04-15,male,2004,NA,NA,rectal adenocarcinoma,yes,NA,0,white,not hispanic or latino,139.51.0
+tcga.g5.6641,value,67,0,NA,804,rectum,stage iiia,t1,n1,mx,02-04-15,male,2009,NA,NA,rectal mucinous adenocarcinoma,yes,r0,1,white,not hispanic or latino,139.51.0
