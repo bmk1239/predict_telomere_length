@@ -1,12 +1,8 @@
-# Load the library with the iris dataset
-from sklearn.datasets import load_iris
 
 # Load scikit's random forest classifier library
 from sklearn.ensemble import RandomForestClassifier
-
 # Load pandas
 import pandas as pd
-
 # Load numpy
 import numpy as np
 
@@ -16,7 +12,7 @@ def main():
     my_data = np.genfromtxt('Database.csv', delimiter=',', dtype=None)
     # Create a dataframe with the four feature variables
     df = pd.DataFrame(my_data[1:], columns=my_data[0])
-    df['is_train'] = np.random.uniform(0, 1, len(df)) <= .75
+    df['is_train'] = np.random.uniform(0, 1, len(df)) <= .80
 
     train, test = df[df['is_train'] == True], df[df['is_train'] == False]
 
