@@ -3,15 +3,18 @@
 from goatools.obo_parser import GODag
 from Bio.UniProt.GOA import gafiterator
 import gzip
+from collections import deque
+import csv
+
+terms = {}
 
 annotations = {}
 # GO graph
 GOgraph = {}
 # topological sorted GO graph order
-order = []
+SampleGeneDic = {}
 
-from collections import deque
-
+convertIdToName = {}
 
 def kahnTopsort(graph):
     in_degree = {u: 0 for u in graph}  # determine in-degree
@@ -39,12 +42,12 @@ def kahnTopsort(graph):
     else:  # if there is a cycle,
         return []  # then return an empty list
 
-# patientGeneVec(Dictionary - key:gene, value:0/1) - Patient vector, each cell is indicate if gene mutated
+# SampleGeneVec(Dictionary - key:gene, value:0/1) - Sample vector, each cell is indicate if gene mutated
 # terms - GO terms according to gene annotations
-def makeOntotype(patientGeneVec, terms):
-    for gene in patientGeneVec:
+def makeOntotype(sampleGeneVec, terms, order):
+    for gene in sampleGeneVec:
         for term in annotations[gene]:
-            terms[term] += patientGeneVec[gene]
+            terms[term] += sampleGeneVec[gene]
 
     for t in order:
         for a in GOgraph[t]:
@@ -52,22 +55,34 @@ def makeOntotype(patientGeneVec, terms):
 
     return terms
 
-if __name__ == "__main__":
-    terms = {}
-    try:
-        fp = gzip.open('goa_human.gaf.gz', 'rt')
-    except ValueError:
-        fp = gzip.open('goa_human.gaf.gz', "r")
-    with fp:
-        for annotation in gafiterator(fp):
-            if annotation['DB_Object_ID'] in annotations:
-                if annotation['GO_ID'] not in annotations[annotation['DB_Object_ID']]:
-                    annotations[annotation['DB_Object_ID']].append(annotation['GO_ID'])
+def getSampleData():
+    with open("vector1New.csv") as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            sampleId = row['SampleID']
+            if row['Gender'] == 'male':
+                SampleGeneDic[sampleId] = {'TL': row['TL'], 'Age': row['Age'], 'Gender': '0'}
+            elif row['Gender'] == 'female':
+                SampleGeneDic[sampleId] = {'TL': row['TL'], 'Age': row['Age'], 'Gender': '1'}
             else:
-                annotations[annotation['DB_Object_ID']] = [annotation['GO_ID']]
-            if annotation['GO_ID'] not in terms:
-                terms[annotation['GO_ID']] = 0
+                continue
+            SampleGeneDic[sampleId]['geneVec'] = {}
+            for gene in annotations:
+                try:
+                    if row[convertIdToName[gene]] == '1':
+                        print "gene id: ", gene
+                        print "gene name: ", convertIdToName[gene]
+                        print "yes"
+                        SampleGeneDic[sampleId]['geneVec'][gene] = 1;
+                    else:
+                        print "no"
+                        SampleGeneDic[sampleId]['geneVec'][gene] = 0;
+                except:
+                    print "fuck"
+                    SampleGeneDic[sampleId]['geneVec'][gene] = 0
+    pass
 
+def creatingGraph():
     obo_file = "go-basic.obo"
     g = GODag(obo_file)
     for t in terms:
@@ -78,14 +93,64 @@ if __name__ == "__main__":
             GOgraph[t].append(a.id)
 
     order = kahnTopsort(GOgraph)
-    patientGeneDic = {1:{"Q5KU26":1,"Q5K651":1},2:{},3:{}}
-    termDict = {}
-    for patientID in patientGeneDic:
-        for t in terms:
-            terms[t] = 0
-        termDict[patientID] = makeOntotype(patientGeneDic[patientID], terms)
-        print termDict[patientID]["GO:0005737"]
-    #rec = g.query_term('GO:0006915', verbose=True)
-    #g.draw_lineage([rec])
+    return order
+    pass
 
+
+def makeConvertIdToNameDic():
+    with open("convertIdToName.csv") as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            convertIdToName[row['ID']] = row['name']
+    pass
+
+def creatingValidAnnotation(fieldnames):
+    try:
+        fp = gzip.open('goa_human.gaf.gz', 'rt')
+    except ValueError:
+        fp = gzip.open('goa_human.gaf.gz', "r")
+    with fp:
+        for annotation in gafiterator(fp):
+            if annotation['DB_Object_ID'] not in convertIdToName:
+                continue
+            if annotation['DB_Object_ID'] in annotations:
+                if annotation['GO_ID'] not in annotations[annotation['DB_Object_ID']]:
+                    annotations[annotation['DB_Object_ID']].append(annotation['GO_ID'])
+            else:
+                annotations[annotation['DB_Object_ID']] = [annotation['GO_ID']]
+            if annotation['GO_ID'] not in terms:
+                terms[annotation['GO_ID']] = 0
+                fieldnames += [annotation['GO_ID']]
+    return fieldnames
+    pass
+
+def main():
+    print "create convert from gene id to gene name dic"
+    makeConvertIdToNameDic()
+    fieldnames = ['TL','Age','Gender']
+    print "creating annotations"
+    fieldnames = creatingValidAnnotation(fieldnames)
+    print "creating graph"
+    order = creatingGraph()
+    print "get sample data"
+    getSampleData()
+    termDict = {}
+    print "go over each sample"
+    with open("Database.csv", "wb") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for sampleID in SampleGeneDic:
+            print "sample id:", sampleID
+            for t in terms:
+                terms[t] = 0
+            termDict[sampleID] = makeOntotype(SampleGeneDic[sampleID]['geneVec'], terms, order)
+            dic = {'TL':SampleGeneDic[sampleID]['TL'],'Age':SampleGeneDic[sampleID]['Age'],'Gender':SampleGeneDic[sampleID]['Gender']}
+            for t in termDict[sampleID]:
+                dic[t] = termDict[sampleID][t]
+            writer.writerow(dic)
+            print "*********************************"
+
+
+if __name__ == "__main__":
+    main()
     pass
