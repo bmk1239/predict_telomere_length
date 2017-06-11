@@ -5,6 +5,8 @@ from Bio.UniProt.GOA import gafiterator
 import gzip
 from collections import deque
 import csv
+import xlrd
+
 
 terms = {}
 
@@ -15,6 +17,7 @@ GOgraph = {}
 SampleGeneDic = {}
 
 convertIdToName = {}
+
 
 def kahnTopsort(graph):
     in_degree = {u: 0 for u in graph}  # determine in-degree
@@ -54,12 +57,29 @@ def makeOntotype(sampleGeneVec, terms, order):
             terms[a] += terms[t]
 
     return terms
+    pass
+
+
+def xls2csv():
+    wb = xlrd.open_workbook('united.xlsx')
+    sh = wb.sheet_by_name('Sheet1')
+    your_csv_file = open('united_csv.csv', 'wb')
+    wr = csv.writer(your_csv_file)
+    for rownum in xrange(sh.nrows):
+        wr.writerow(sh.row_values(rownum))
+    your_csv_file.close()
+    pass
 
 def getSampleData():
-    with open("vector1New.csv") as csvfile:
+    print "convert xls to csv"
+    xls2csv()
+    print "get sample data"
+    with open("united_csv.csv") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             sampleId = row['SampleID']
+            if sampleId == '':
+                continue
             if row['Gender'] == 'male':
                 SampleGeneDic[sampleId] = {'TL': row['TL'], 'Age': row['Age'], 'Gender': '0'}
             elif row['Gender'] == 'female':
@@ -69,7 +89,7 @@ def getSampleData():
             SampleGeneDic[sampleId]['geneVec'] = {}
             for gene in annotations:
                 try:
-                    if row[convertIdToName[gene]] == '1':
+                    if row[convertIdToName[gene]] == '1.0':
                         print "gene id: ", gene
                         print "gene name: ", convertIdToName[gene]
                         print "yes"
@@ -132,14 +152,16 @@ def main():
     fieldnames = creatingValidAnnotation(fieldnames)
     print "creating graph"
     order = creatingGraph()
-    print "get sample data"
     getSampleData()
     termDict = {}
     print "go over each sample"
-    with open("Database.csv", "wb") as csvfile:
+    with open("Database.csv", "ab") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
+        i = 0
         for sampleID in SampleGeneDic:
+            print i
+            i += 1
             print "sample id:", sampleID
             for t in terms:
                 terms[t] = 0
