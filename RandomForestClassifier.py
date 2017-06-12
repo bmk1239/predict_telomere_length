@@ -33,8 +33,8 @@ def main():
 
     print "Apply the classifier we trained to the test data (which, remember, it has never seen before)"
     clf.predict(test[features])
-
     pred_probs = clf.predict_proba(test[features])
+    print pred_probs
     row = []
     for results in pred_probs:
         col = []
@@ -47,6 +47,7 @@ def main():
         writer.writerows(row)
     preds = clf.predict(test[features])
     conf_mat = pd.crosstab(test['TL'], preds, rownames=['Actual TL'], colnames=['Predicted TL'])
+    print conf_mat
     conf_mat.to_csv("result_confusion_matrix.csv")
     score = list(zip(train[features], clf.feature_importances_))
     with open("result_features_scores.csv", "wb") as f:
