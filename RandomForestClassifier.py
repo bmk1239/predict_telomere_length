@@ -29,7 +29,7 @@ def main():
     print y
 
     print "Create a random forest classifier. By convention, clf means 'classifier'"
-    clf = RandomForestClassifier(oob_score=True, n_jobs=2)
+    clf = RandomForestClassifier(n_jobs=2)
 
     #
     # RANDOM_STATE = 123
@@ -94,6 +94,12 @@ def main():
     print "confusion matrix:"
     print conf_mat
     # conf_mat.to_csv("result_confusion_matrix.csv")
+    compareVals = list(zip(test['TL'], preds))
+    with open("compareFile.csv", "wb") as f:
+        writer = csv.DictWriter(f, fieldnames=['Actual TL', 'Predicted TL'])
+        writer.writeheader()
+        for (x1,y1) in compareVals:
+            writer.writerow({'Actual TL': x1, 'Predicted TL': y1})
     score = list(zip(train[features], clf.feature_importances_))
     zero_score = list();
     non_zero_score = list();
