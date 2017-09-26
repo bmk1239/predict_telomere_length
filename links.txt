@@ -1,1 +1,0 @@
-http://www.candidagenome.org/cgi-bin/GO/go.pl?goid=723
