@@ -2,6 +2,7 @@
 Workshop project
 
 To run you have 2 options:
+
 firts option:
 1. extract newSmapless.zip.
 2. run Ontotype.py , Database_all.csv will be created 
