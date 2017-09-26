@@ -72,34 +72,48 @@ def xls2csv():
 
 def getSampleData():
     print "convert xls to csv"
-    xls2csv()
+    #xls2csv()
     print "get sample data"
-    with open("united_csv.csv") as csvfile:
+    count1 = 0
+    count = 0
+    count2 = 0
+    count3 = 0
+    count4 = 0
+    with open("newSmapless.csv") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
+            count1 += 1
             sampleId = row['SampleID']
-            if sampleId == '':
+            if (sampleId == '') or (row['Age'] == '') or (row['TL'] == '') or ((row['Gender'] != 'male')and(row['Gender'] != 'female')):
                 continue
+            tl = '0'
+            if float(row['TL']) >= 1.0:
+                tl = '1'
             if row['Gender'] == 'male':
-                SampleGeneDic[sampleId] = {'TL': row['TL'], 'Age': row['Age'], 'Gender': '0'}
+                SampleGeneDic[sampleId] = {'TL': tl, 'Age': row['Age'], 'Gender': '0'}
             elif row['Gender'] == 'female':
-                SampleGeneDic[sampleId] = {'TL': row['TL'], 'Age': row['Age'], 'Gender': '1'}
-            else:
-                continue
+                SampleGeneDic[sampleId] = {'TL': tl, 'Age': row['Age'], 'Gender': '1'}
+            count += 1
             SampleGeneDic[sampleId]['geneVec'] = {}
+            print "sampleID: ", sampleId
             for gene in annotations:
+                count2 += 1
                 try:
-                    if row[convertIdToName[gene]] == '1.0':
-                        print "gene id: ", gene
-                        print "gene name: ", convertIdToName[gene]
-                        print "yes"
+                    if row[convertIdToName[gene]] == '1':
                         SampleGeneDic[sampleId]['geneVec'][gene] = 1;
+
+                        count3 += 1
                     else:
-                        print "no"
                         SampleGeneDic[sampleId]['geneVec'][gene] = 0;
+                        count4 += 1
                 except:
-                    print "fuck"
                     SampleGeneDic[sampleId]['geneVec'][gene] = 0
+                    count4 += 1
+    print "#samples: ", count1
+    print "#valid samples: ", count
+    print "#genes: " ,count2
+    print "#genes with 1: ", count3
+    print "#genes with 0: ", count4
     pass
 
 def creatingGraph():
@@ -154,8 +168,9 @@ def main():
     order = creatingGraph()
     getSampleData()
     termDict = {}
+    print "#go terms: ", len(terms)
     print "go over each sample"
-    with open("Database.csv", "ab") as csvfile:
+    with open("Database_all.csv", "ab") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         i = 0
