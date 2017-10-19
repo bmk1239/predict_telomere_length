@@ -4,6 +4,7 @@ from goatools.obo_parser import GODag
 from Bio.UniProt.GOA import gafiterator
 import gzip
 from collections import deque
+import numpy as np
 import csv
 import xlrd
 
@@ -114,6 +115,7 @@ def getSampleData():
     print "#genes: " ,count2
     print "#genes with 1: ", count3
     print "#genes with 0: ", count4
+	np.random.shuffle(SampleGeneDic[sampleId]['geneVec'])
     pass
 
 def creatingGraph():
