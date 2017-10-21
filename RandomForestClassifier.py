@@ -41,15 +41,17 @@ def randomForestClassifierFunc(X,Y,count):
     print "AUC of {0}: {1}".format("RandomForestClassifier", accuracy)
 
 def main():
+    #my_data = np.genfromtxt('Database_all_shuffle.csv', delimiter=',', dtype=None)
     my_data = np.genfromtxt('Database_all.csv', delimiter=',', dtype=None)
     print "Create a dataframe with the feature variables"
     df = pd.DataFrame(my_data[1:], columns=my_data[0])
+    print len(my_data[0])
     X = df.drop('TL', axis=1)
     Z = df[['Age','Gender']]
     Y = df['TL']
     randomForestClassifierFunc(X,Y,1)
-    print "***************** only age and gender ********************"
-    randomForestClassifierFunc(Z, Y,2)
+    #print "***************** only age and gender ********************"
+    #randomForestClassifierFunc(Z, Y,2)
     plt.show()
     pass
 

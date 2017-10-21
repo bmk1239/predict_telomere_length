@@ -1,10 +1,9 @@
 #!/usr/bin/python
-
+import numpy as np
 from goatools.obo_parser import GODag
 from Bio.UniProt.GOA import gafiterator
 import gzip
 from collections import deque
-import numpy as np
 import csv
 import xlrd
 
@@ -110,13 +109,16 @@ def getSampleData():
                 except:
                     SampleGeneDic[sampleId]['geneVec'][gene] = 0
                     count4 += 1
+            # RANDOM ONTOTYPE FOR CHECKING
+            #print "now random suffle"
+            #keys = list((SampleGeneDic[sampleId]['geneVec']).keys())
+            #np.random.shuffle(keys)
+            #SampleGeneDic[sampleId]['geneVec'] = dict(zip(keys, (SampleGeneDic[sampleId]['geneVec']).values()))
     print "#samples: ", count1
     print "#valid samples: ", count
     print "#genes: " ,count2
     print "#genes with 1: ", count3
     print "#genes with 0: ", count4
-    print "now random suffle"
-    np.random.shuffle(SampleGeneDic[sampleId]['geneVec'])
     pass
 
 def creatingGraph():
@@ -173,6 +175,7 @@ def main():
     termDict = {}
     print "#go terms: ", len(terms)
     print "go over each sample"
+    #with open("Database_all_shuffle.csv", "ab") as csvfile:
     with open("Database_all.csv", "ab") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
